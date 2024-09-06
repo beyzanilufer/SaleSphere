@@ -1,0 +1,178 @@
+.pagee {
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-color: rgb(135, 147, 144);*/
+    background-color:#8fd8ec;
+    margin-bottom: "10px";
+}
+
+
+
+.flex-between {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+p {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.form-group {
+
+    /*width: 100%;*/
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    /* Öğeleri yatayda ortalar */
+    padding: 20px;
+    /* İç boşlukları kaldırır */
+    margin: 20px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+
+
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Gölge arka plan */
+    z-index: 1000; /* Modal'ın diğer içeriklerin üzerinde görünmesini sağlar */
+}
+.business-form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+
+.pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+}
+
+.pagination-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+button {
+    font-size: 15px;
+}
+
+.table {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid lightgrey;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tfoot td {
+    text-align: right;
+}
+td select {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+select {
+    border: none; 
+    border-bottom: 1px solid lightgrey; 
+    padding: 5px; 
+    font-size: 16px; 
+}
+
+@media (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

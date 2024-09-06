@@ -1,0 +1,72 @@
+.login{
+    background: url("../../src/img/mavi.jpg") no-repeat fixed center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    /* margin: 50px auto; */
+    background-color: #addcf2;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px #0000001a;
+    text-align: center;
+   
+}
+
+input{
+    padding: 5px;
+}
+h5 {
+    margin: 15px 0;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+br {
+    display: block;
+    margin: 15px 0;
+}
+
+button:hover {
+    background-color: #3c6da9;
+    transform: scale(1.05);
+    /* Buton büyütme efekti */
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* İmleç işareti */
+    font-size: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Renk ve transform geçiş efekti */
+}
+
+
+
+.icon {
+    font-size: 200px;
+    color: #0b0606;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
